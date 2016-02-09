@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Trampoline</title>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/Jumper.js"></script>
+    <script type="application/javascript" src="lib/SmallRedJumper.js"></script>
+    <script type="application/javascript" src="lib/Game.js"></script>
+    <script type="application/javascript" src="lib/GameView.js"></script>
+
+    <script>
+    	(function () {
+        var canvasEl = document.getElementsById("canvas");
+        canvasEl.width = Asteroids.Game.DIM_X;
+        canvasEl.height = Asteroids.Game.DIM_Y;
+        var ctx = canvasEl.getContext("2d");
+        var game = new Asteroids.Game();
+        new Asteroids.GameView(game, ctx).start();
+      })();
+    </script>
+
+  </body>
+
+</html>
