@@ -1,10 +1,17 @@
 <html>
   <head>
     <title>MyTrampoline</title>
+    <link type="text/css" href="style.css" rel="stylesheet"></style>
   </head>
 
   <body>
-    <canvas id="canvas"></canvas>
+  	<div id="SplashScreen">
+			<h1>Trampoliner</h1>
+			<h3 id="StartButton" type="button" value="Start">Let's bounce bro.</h3>
+			<p>click here</p>
+		</div>
+
+    <canvas id="canvas" style="display: none;"></canvas>
 
     <script src="lib/keymaster.js"></script>
     <script type="application/javascript" src="lib/Util.js"></script>
@@ -13,17 +20,22 @@
     <script type="application/javascript" src="lib/Trampoline.js"></script>
     <script type="application/javascript" src="lib/Game.js"></script>
     <script type="application/javascript" src="lib/GameView.js"></script>
-    <style type="text/css" src="/style.css"></style>
 
     <script>
-    	(function () {
+	    document.getElementById("SplashScreen").onclick =function () {
+	        document.getElementById("SplashScreen").style.display = "none";
+	        document.getElementById("canvas").style.display = "";
+	        newGame();
+	    };
+
+    	var newGame = function () {
         var canvasEl = document.getElementById("canvas");
         canvasEl.width = MyTrampoline.Game.DIM_X;
         canvasEl.height = MyTrampoline.Game.DIM_Y;
         var ctx = canvasEl.getContext("2d");
         var game = new MyTrampoline.Game();
         new MyTrampoline.GameView(game, ctx).start();
-      })();
+      };
     </script>
 
   </body>

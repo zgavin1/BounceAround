@@ -1,6 +1,32 @@
+html, canvas, body {
+	font-family: inherit;
+	font-size: inherit;
+	text-decoration: inherit;
+	box-sizing: inherit;
 
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
 
-#canvas {
+body {
+	width: max;
+	font-family: sans-serif;
+	font-size: 50px;
+	background-color: lightblue;
+}
+
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 1000px;
+}
+
+#SplashScreen {
+	width 500px;
 	margin: auto;
-	width: 1000px;
+	text-align: center;
 }
