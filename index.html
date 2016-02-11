@@ -11,22 +11,38 @@
 			<p>click here</p>
 		</div>
 
-    <canvas id="canvas" style="display: none;"></canvas>
+
+    <canvas id="canvas" style="display: none;">
+	    <div id="pause">
+	    	<h1>Game Paused</h1>
+	    	<h3 id="keep-bouncing">Click here to kep bouncing</h3>
+	    </div>
+
+			<div id="play-again" style="display: none;">
+				<button> Play Again? </button>
+			</div>
+    </canvas>
+
+
+
 
     <script src="lib/keymaster.js"></script>
     <script type="application/javascript" src="lib/Util.js"></script>
     <script type="application/javascript" src="lib/Jumper.js"></script>
     <script type="application/javascript" src="lib/SmallRedJumper.js"></script>
     <script type="application/javascript" src="lib/Trampoline.js"></script>
+    <script type="application/javascript" src="lib/ScoreKeeper.js"></script>
+    <script type="application/javascript" src="lib/Timer.js"></script>
     <script type="application/javascript" src="lib/Game.js"></script>
     <script type="application/javascript" src="lib/GameView.js"></script>
 
     <script>
-	    document.getElementById("SplashScreen").onclick =function () {
+	    document.getElementById("SplashScreen").onclick = function () {
 	        document.getElementById("SplashScreen").style.display = "none";
 	        document.getElementById("canvas").style.display = "";
 	        newGame();
 	    };
+	    
 
     	var newGame = function () {
         var canvasEl = document.getElementById("canvas");
