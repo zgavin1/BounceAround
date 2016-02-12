@@ -55,6 +55,14 @@ canvas {
 	color: white;
 }
 
+#design-id {
+	position: absolute;
+	top: 90%;
+	left: 45%;
+	font-size: 14px;
+	color: white;
+}
+
 a {
 	color: black;
 }
