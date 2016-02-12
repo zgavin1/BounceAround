@@ -40,14 +40,12 @@ canvas {
 }
 
 #play-again {
-	/*display: none;*/
 	position: absolute;
 	top: 50%;
 	left: 50%;
 }
 
 #references {
-	/*display: none;*/
 	position: absolute;
 	top: 3%;
 	left: 27%;
