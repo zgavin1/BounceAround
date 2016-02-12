@@ -5,6 +5,11 @@
   </head>
 
   <body>
+		<div id="references" style="display: none;">
+			<p>Like the game? Check out my work at 
+				<a href="www.github.com/zgavin1" >github.com/zgavin1</a></p>
+		</div>
+			
   	<div id="SplashScreen">
 			<h1>Trampoliner</h1>
 			<h3 id="StartButton" type="button" value="Start">Let's bounce bro.</h3>
@@ -17,12 +22,13 @@
     <canvas id="canvas" style="display: none;">
 	    <div id="pause">
 	    	<h1>Game Paused</h1>
-	    	<h3 id="keep-bouncing">Click here to kep bouncing</h3>
+	    	<h3 id="keep-bouncing">Click here to keep bouncing</h3>
 	    </div>
 
 			<div id="play-again" style="display: none;">
 				<button> Play Again? </button>
 			</div>
+
     </canvas>
 
 
@@ -42,6 +48,8 @@
 	    document.getElementById("SplashScreen").onclick = function () {
 	        document.getElementById("SplashScreen").style.display = "none";
 	        document.getElementById("canvas").style.display = "";
+	        document.getElementById("references").style.display = "";
+
 	        newGame();
 	    };
 
