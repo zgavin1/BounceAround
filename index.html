@@ -60,6 +60,7 @@
 
     	var newGame = function () {
             var canvasEl = document.getElementById("canvas");
+            canvasEl.onclick = null;
             canvasEl.width = MyTrampoline.Game.DIM_X;
             canvasEl.height = MyTrampoline.Game.DIM_Y;
             var ctx = canvasEl.getContext("2d");
