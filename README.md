@@ -1,6 +1,6 @@
 
-Take a minute to jump and spin with
-# [BounceAround](http://zgavin1.github.io/BounceAround)!
+
+# [BounceAround](http://zgavin1.github.io/BounceAround)
 
 ![screenshot](./assets/bouncearoundss.png)
 
