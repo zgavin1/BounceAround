@@ -1,7 +1,8 @@
-# BounceAround
-An HTML5 game!
 
-### Take a minute to bounce and spin around! [Play here][http://zgavin1.github.io/BounceAround]
+Take a minute to jump and spin with
+# [BounceAround](http://zgavin1.github.io/BounceAround)!
+
+![screenshot](.assets/bouncearoundss.png)
 
 
 ## Overview
