@@ -2,7 +2,9 @@
 
 # [BounceAround](http://zgavin1.github.io/BounceAround)
 
-![screenshot](./assets/bouncearoundss.png)
+
+[![Bouncing](/assets/bounceSS1.png)](http://zach-gavin.com/BounceAround/)
+[![Flying](/assets/bounceSS2.png)](http://zach-gavin.com/BounceAround/)
 
 
 ## Overview
