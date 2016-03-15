@@ -5,10 +5,10 @@
   </head>
 
   <body>
-		<div id="references" style="display: none;">
+		<!-- <div id="references" style="display: none;">
 			<p>Like the game? Check out my work at 
 				<a href="www.github.com/zgavin1" >github.com/zgavin1</a></p>
-		</div>
+		</div> -->
 			
   	    <div id="SplashScreen">
 			<h1>Bounce Around</h1>
@@ -25,14 +25,16 @@
 	    	<h3 id="keep-bouncing">Click here to keep bouncing</h3>
 	    </div>
 
-			<div id="play-again" style="display: none;">
-				<button> Play Again? </button>
-			</div>
+		<div id="play-again" style="display: none;">
+			<button> Play Again? </button>
+		</div>
 
     </canvas>
 
     <div id="design-id" >
     	<p>Designed by Zach Gavin</p>
+        <p>Like the game? Check out my work at 
+            <a href="www.github.com/zgavin1" >github.com/zgavin1</a></p>
     </div>
 
 
@@ -53,7 +55,7 @@
 	    document.getElementById("SplashScreen").onclick = function () {
 	        document.getElementById("SplashScreen").style.display = "none";
 	        document.getElementById("canvas").style.display = "";
-	        document.getElementById("references").style.display = "";
+	        // document.getElementById("references").style.display = "";
 
 	        newGame();
 	    };
